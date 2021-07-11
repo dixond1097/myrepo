@@ -3,10 +3,7 @@ import express, { NextFunction, Request, Response } from 'express';
 import 'express-async-errors';
 // import path from 'path';
 import StatusCodes from 'http-status-codes';
-<<<<<<< HEAD
 
-=======
->>>>>>> d57a440 (Attempted to make Docker)
 import dotenv from 'dotenv';
 import cors from 'cors';
 import log from './log';
@@ -35,16 +32,12 @@ app.use(expressSession({
   secret: 'whatever-probably-should-be-from-env-vars',
   cookie: {},
 }));
-<<<<<<< HEAD
-
-=======
 app.use(cors({
   credentials: true,
   origin: [
     process.env.WEB_CLIENT_ORIGIN || 'https://localhost',
   ],
-}))
->>>>>>> d57a440 (Attempted to make Docker)
+}));
 app.use('/', baseRouter);
 
 const { BAD_REQUEST, UNAUTHORIZED } = StatusCodes;
