@@ -1,4 +1,4 @@
-FROM node:lts-slim
+FROM node:lts-alpine
 
 COPY . .
 # In conjunction with the .dockerignore file
