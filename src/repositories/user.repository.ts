@@ -89,11 +89,7 @@ export class UserDAO {
     };
     try {
       await this.client.put(params).promise();
-<<<<<<< HEAD
 
-=======
-      
->>>>>>> d57a440 (Attempted to make Docker)
       return true;
     } catch(error) {
       console.log('Failed to add User: ', error);
